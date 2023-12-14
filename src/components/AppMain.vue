@@ -21,7 +21,7 @@ export default {
             if(this.store.searchArchetype !== ''){
                 axios.get(this.store.apiUrl, { 
                     params: {
-                        archetype: this.store.searchArchetype
+                        archetype: this.store.searchArchetype,
                     }
                 }).then((response) => {
                     this.store.cards = response.data.data;
